@@ -34,4 +34,13 @@ stm32f407zgt6_adc\stm32f4xx_it.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_
 stm32f407zgt6_adc\stm32f4xx_it.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
 stm32f407zgt6_adc\stm32f4xx_it.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 stm32f407zgt6_adc\stm32f4xx_it.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+stm32f407zgt6_adc\stm32f4xx_it.o: ../Inc/touch.h
+stm32f407zgt6_adc\stm32f4xx_it.o: ../Inc/main.h
+stm32f407zgt6_adc\stm32f4xx_it.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+stm32f407zgt6_adc\stm32f4xx_it.o: D:\Keil5\ARM\ARMCC\Bin\..\include\math.h
+stm32f407zgt6_adc\stm32f4xx_it.o: D:/stm32_resource/touch/w25qxx.h
+stm32f407zgt6_adc\stm32f4xx_it.o: ../Inc/spi.h
+stm32f407zgt6_adc\stm32f4xx_it.o: D:\Keil5\ARM\ARMCC\Bin\..\include\string.h
+stm32f407zgt6_adc\stm32f4xx_it.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
+stm32f407zgt6_adc\stm32f4xx_it.o: D:/stm32_resource/touch/ILI93xx.h
 stm32f407zgt6_adc\stm32f4xx_it.o: ../Inc/stm32f4xx_it.h

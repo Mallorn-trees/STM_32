@@ -1,6 +1,8 @@
 --cpu=Cortex-M4.fp
 "stm32f407zgt6_adc\startup_stm32f407xx.o"
 "stm32f407zgt6_adc\w25qxx.o"
+"stm32f407zgt6_adc\ili93xx.o"
+"stm32f407zgt6_adc\touch.o"
 "stm32f407zgt6_adc\main.o"
 "stm32f407zgt6_adc\gpio.o"
 "stm32f407zgt6_adc\dma.o"

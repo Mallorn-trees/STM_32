@@ -35,3 +35,12 @@ stm32f407zgt6_adc\dma.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h
 stm32f407zgt6_adc\dma.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
 stm32f407zgt6_adc\dma.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 stm32f407zgt6_adc\dma.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+stm32f407zgt6_adc\dma.o: ../Inc/touch.h
+stm32f407zgt6_adc\dma.o: ../Inc/main.h
+stm32f407zgt6_adc\dma.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+stm32f407zgt6_adc\dma.o: D:\Keil5\ARM\ARMCC\Bin\..\include\math.h
+stm32f407zgt6_adc\dma.o: D:/stm32_resource/touch/w25qxx.h
+stm32f407zgt6_adc\dma.o: ../Inc/spi.h
+stm32f407zgt6_adc\dma.o: D:\Keil5\ARM\ARMCC\Bin\..\include\string.h
+stm32f407zgt6_adc\dma.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
+stm32f407zgt6_adc\dma.o: D:/stm32_resource/touch/ILI93xx.h

@@ -142,6 +142,14 @@ int main(void)
   HAL_TIM_Base_Start_IT(&htim2);
   HAL_TIM_PWM_Start(&htim14,TIM_CHANNEL_1);
   HAL_UART_Receive_DMA(&huart1,buffer,3);
+  TFTLCD_Init();	
+  W25QXX_Init();
+  TP_Init();
+  LCD_Clear(GREEN);
+  LCD_ShowString(30,40,210,24,24,"What a nice day!");	
+  LCD_ShowString(30,70,200,16,16,"TFTLCD TEST");
+  LCD_ShowString(30,90,200,16,16,"2020/7/29"); 
+
   /* USER CODE END 2 */
 
   /* Infinite loop */

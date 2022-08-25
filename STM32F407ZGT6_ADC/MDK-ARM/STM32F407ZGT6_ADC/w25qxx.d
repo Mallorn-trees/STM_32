@@ -1,5 +1,10 @@
 stm32f407zgt6_adc\w25qxx.o: D:\stm32_resource\touch\w25qxx.c
 stm32f407zgt6_adc\w25qxx.o: D:\stm32_resource\touch\w25qxx.h
+stm32f407zgt6_adc\w25qxx.o: ../Inc/main.h
+stm32f407zgt6_adc\w25qxx.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
+stm32f407zgt6_adc\w25qxx.o: ../Inc/stm32f4xx_hal_conf.h
+stm32f407zgt6_adc\w25qxx.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h
+stm32f407zgt6_adc\w25qxx.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
 stm32f407zgt6_adc\w25qxx.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
 stm32f407zgt6_adc\w25qxx.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h
 stm32f407zgt6_adc\w25qxx.o: ../Drivers/CMSIS/Include/core_cm4.h
@@ -10,10 +15,6 @@ stm32f407zgt6_adc\w25qxx.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
 stm32f407zgt6_adc\w25qxx.o: ../Drivers/CMSIS/Include/mpu_armv7.h
 stm32f407zgt6_adc\w25qxx.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h
 stm32f407zgt6_adc\w25qxx.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
-stm32f407zgt6_adc\w25qxx.o: ../Inc/stm32f4xx_hal_conf.h
-stm32f407zgt6_adc\w25qxx.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h
-stm32f407zgt6_adc\w25qxx.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
-stm32f407zgt6_adc\w25qxx.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
 stm32f407zgt6_adc\w25qxx.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
 stm32f407zgt6_adc\w25qxx.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
 stm32f407zgt6_adc\w25qxx.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h
@@ -34,5 +35,14 @@ stm32f407zgt6_adc\w25qxx.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_sp
 stm32f407zgt6_adc\w25qxx.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
 stm32f407zgt6_adc\w25qxx.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 stm32f407zgt6_adc\w25qxx.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+stm32f407zgt6_adc\w25qxx.o: ../Inc/touch.h
 stm32f407zgt6_adc\w25qxx.o: ../Inc/main.h
+stm32f407zgt6_adc\w25qxx.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+stm32f407zgt6_adc\w25qxx.o: D:\Keil5\ARM\ARMCC\Bin\..\include\math.h
+stm32f407zgt6_adc\w25qxx.o: D:/stm32_resource/touch/w25qxx.h
 stm32f407zgt6_adc\w25qxx.o: ../Inc/spi.h
+stm32f407zgt6_adc\w25qxx.o: D:\Keil5\ARM\ARMCC\Bin\..\include\string.h
+stm32f407zgt6_adc\w25qxx.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
+stm32f407zgt6_adc\w25qxx.o: D:/stm32_resource/touch/ILI93xx.h
+stm32f407zgt6_adc\w25qxx.o: ../Inc/usart.h
+stm32f407zgt6_adc\w25qxx.o: ../Inc/tim.h
