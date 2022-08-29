@@ -18,6 +18,7 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "adc.h"
 #include "dma.h"
 #include "spi.h"
 #include "tim.h"
@@ -48,6 +49,9 @@
 
 /* USER CODE BEGIN PV */
 uint8_t buffer[5];
+float adc_value;
+uint32_t ADC_Value;
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -60,7 +64,7 @@ void SystemClock_Config(void);
 /* USER CODE BEGIN 0 */
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
-	HAL_GPIO_TogglePin(GPIOF,GPIO_PIN_10);
+//	HAL_GPIO_TogglePin(GPIOF,GPIO_PIN_10);
 }
 
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
@@ -101,6 +105,41 @@ void PWM()
 		  }
 		  HAL_Delay(200);
 }
+
+void rtp_test(void)
+{
+//	uint8_t key;
+	uint8_t i=0;	  
+	while(1)
+	{
+		
+		
+		tp_dev.scan(0); 	
+		
+		if(tp_dev.sta&TP_PRES_DOWN)			//触摸屏被按下
+		{	
+			
+		 	if(tp_dev.x[0]<lcddev.width&&tp_dev.y[0]<lcddev.height)
+			{	
+
+				if(tp_dev.x[0]>(lcddev.width-24)&&tp_dev.y[0]<16)
+					 LCD_Clear(GREEN);//清除
+				else 
+				{
+					TP_Draw_Big_Point(tp_dev.x[0],tp_dev.y[0],RED);		//画图	  		
+					HAL_GPIO_TogglePin(GPIOF,GPIO_PIN_10);//LED灯闪
+				}
+			}
+		}
+		else HAL_Delay(10);	//没有按键按下的时候 	  		
+		i++;
+		if(i%20==0)
+		{
+//		  HAL_GPIO_TogglePin(GPIOF,GPIO_PIN_10);//LED灯闪，指示系统在运行
+		}
+		
+	}
+}
 /* USER CODE END 0 */
 
 /**
@@ -138,6 +177,7 @@ int main(void)
   MX_TIM14_Init();
   MX_TIM7_Init();
   MX_SPI1_Init();
+  MX_ADC1_Init();
   /* USER CODE BEGIN 2 */
   HAL_TIM_Base_Start_IT(&htim2);
   HAL_TIM_PWM_Start(&htim14,TIM_CHANNEL_1);
@@ -145,10 +185,10 @@ int main(void)
   TFTLCD_Init();	
   W25QXX_Init();
   TP_Init();
-  LCD_Clear(GREEN);
+//  LCD_Clear(GREEN);
   LCD_ShowString(30,40,210,24,24,"What a nice day!");	
-  LCD_ShowString(30,70,200,16,16,"TFTLCD TEST");
-  LCD_ShowString(30,90,200,16,16,"2020/7/29"); 
+//  LCD_ShowString(30,70,200,16,16,"TFTLCD TEST");
+//  LCD_ShowString(30,90,200,16,16,"2020/7/29"); 
 
   /* USER CODE END 2 */
 
@@ -158,7 +198,22 @@ int main(void)
   {
     /* USER CODE END WHILE */
 
+
     /* USER CODE BEGIN 3 */
+	HAL_ADC_Start(&hadc1);
+	HAL_ADC_PollForConversion(&hadc1, 50);
+	if(HAL_IS_BIT_SET(HAL_ADC_GetState(&hadc1), HAL_ADC_STATE_REG_EOC))
+	{
+		ADC_Value = HAL_ADC_GetValue(&hadc1);
+		LCD_ShowString(30,70,200,16,16,"TFTLCD TEST");
+		LCD_ShowxNum(30,100,ADC_Value*FACTOR_ADC,6,24,0);
+//		printf("PA5 True Voltage value : %.4f \r\n",ADC_Value*3.3f/4096);
+		HAL_Delay(500);
+	}
+
+//	adc_value = get_adc_value();
+//	HAL_Delay(0);
+//	LCD_ShowString(30,40,210,24,24,"What a nice day!");	
   }
   /* USER CODE END 3 */
 }

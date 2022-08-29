@@ -23,6 +23,9 @@ stm32f407zgt6_adc\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti
 stm32f407zgt6_adc\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h
 stm32f407zgt6_adc\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h
 stm32f407zgt6_adc\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h
+stm32f407zgt6_adc\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h
+stm32f407zgt6_adc\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h
+stm32f407zgt6_adc\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h
 stm32f407zgt6_adc\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h
 stm32f407zgt6_adc\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h
 stm32f407zgt6_adc\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h
@@ -43,6 +46,7 @@ stm32f407zgt6_adc\main.o: ../Inc/spi.h
 stm32f407zgt6_adc\main.o: D:\Keil5\ARM\ARMCC\Bin\..\include\string.h
 stm32f407zgt6_adc\main.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
 stm32f407zgt6_adc\main.o: D:/stm32_resource/touch/ILI93xx.h
+stm32f407zgt6_adc\main.o: ../Inc/adc.h
 stm32f407zgt6_adc\main.o: ../Inc/dma.h
 stm32f407zgt6_adc\main.o: ../Inc/tim.h
 stm32f407zgt6_adc\main.o: ../Inc/usart.h
